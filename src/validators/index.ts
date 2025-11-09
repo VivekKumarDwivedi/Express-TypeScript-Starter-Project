@@ -1,7 +1,7 @@
-import { AnyZodObject } from "zod/v3";
+import { ZodObject } from "zod";
 import { Request, Response, NextFunction } from "express";
 import logger from "../config/logger.config";
-
+ type AnyZodObject = ZodObject<any>;
 
 /**
  * Middleware to validate request body against a zod schema
